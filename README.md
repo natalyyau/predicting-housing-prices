@@ -1,11 +1,32 @@
-# predicting-housing-prices
+# Housing Price Prediction
 
+A machine learning project that predicts housing prices in Seattle, Washington using exploratory data analysis, feature engineering, and Gradient Boosting regression.
 
-<!-- Missingness visual -  add simple visual missing values heatmap (disregarded because it's all null anyway)--> done
-<!-- Add markdown clearly stating input features (x) and price being target variable (y) --> done
-<!-- After scatter/correlation, add categorical-numeric relationship of price log vs condition in a box plot --> done
-<!-- Under correlation heatmap, add correlation interpretation --> done
-<!-- Add a grouped summary analysis like df.groupby(condition)[price_log].mean() -->
-<!-- Mention at the end how there's no data leakage -->
-<!-- Summarize the most interesting patterns you found -->
-<!-- Add meaningful comments in the code at the end -->
+# **About**
+
+This project analyzes 21,613 Seattle housing records to predict property prices. The workflow includes:
+
+- Exploratory data analysis with visualizations
+- Feature engineering (log transformations, age calculations, handling multicollinearity)
+- Training and comparing three regression models (Linear Regression, Decision Tree, Gradient Boosting)
+- Hyperparameter tuning on the best model
+
+**Final Model**: Gradient Boosting
+**Performance**: R² = 0.711, MAE = 0.223, RMSE = 0.284
+
+# **Dataset**
+
+**Source**: Kaggle
+**Size**: 21,613 observations
+**Features**: 21 columns including bedrooms, bathrooms, sqft_living, grade, view, condition, zipcode, etc.
+
+# **How to Run**
+
+1. housing_eda.ipynb - Analyze the dataset
+2. housing_preprocessing.ipynb - Clean and prepare data
+3. housing_modeling.ipynb - Train models
+4. housing_evaluation.ipynb - Evaluate final model
+
+# Contributors
+
+Nataly Yau, Rose Joseph, Khushi Nanda, Tahia Islam, and Sangit Gaire
